@@ -135,9 +135,7 @@ const HomePage: React.FC = () => {
             CONVERT
           </Button>
         </HStack>
-        <Box>
-          {/* <GithubLink handleGithubPaste={handleGithubPaste} loading={loading} /> */}
-        </Box>
+       
         <HStack justifyContent={"center"}>
           <Button colorScheme="red" onClick={handleDebug} isDisabled={loading}>
             DEBUG
