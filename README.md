@@ -1,12 +1,12 @@
 # code-converter
 
-![Code Converter Home Page]()
+![Code Converter Home Page](https://github.com/chaudhari014/code-converter/blob/master/frontend/src/assets/home.png)
 
 Code Converter is a versatile tool that serves as a code converter, code quality checker, and code debugger. It empowers developers to streamline their coding workflow and enhance code quality effortlessly.
 
 **Note:**
 
-Might be the functionality will not work properly, as I have used the OPENAI free one-month API, which will expire after one month. So the website may not work correctly. However, you can watch a video demonstration of the Code Ninja functionality [here](https://drive.google.com/drive/folders/1ITYQAepLg3K67DvCKHZjBQnALdVf7fwe?usp=drive_link).
+Might be the functionality will not work properly, as I have used the OPENAI free one-month API, which will expire after one month. So the website may not work correctly. However, you can watch a video demonstration of the Code Converter functionality [here]().
 
 ## Features
 
@@ -17,13 +17,13 @@ Might be the functionality will not work properly, as I have used the OPENAI fre
 
 ## Usage
 
-1. Visit the [Code Ninja Website]().
+1. Visit the [Code Converter Website]().
 2. Choose the desired tool: Code Converter, Code Quality Checker, or Code Debugger.
 3. Review the results and make necessary changes.
 
 ## Getting Started
 
-To get started with Code Ninja locally, follow these steps:
+To get started with Code converter locally, follow these steps:
 
 1. Clone the repository:
 
