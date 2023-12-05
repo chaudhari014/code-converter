@@ -1,3 +1,3 @@
-const API = "http://localhost:7080";
+const API = "https://codeconverter-gkp0.onrender.com";
 
 export default API;

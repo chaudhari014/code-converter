@@ -12,7 +12,7 @@ import CodeEditor from "../component/CodeEditore";
 import Loading from "../component/Loading";
 import Markdown from "react-markdown";
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   const [language, setLanguage] = useState("JavaScript");
   const [loading, setLoading] = useState(false);
   const [code, setCode] = useState("Write your code here");
@@ -20,7 +20,7 @@ const HomePage = () => {
     "# Hi there, *Output will be here...*!"
   );
 
-  const messageBoxRef = useRef();
+  const messageBoxRef = useRef<HTMLDivElement>(null);
   const handleConvert = async () => {
     messageBoxRef.current.focus();
     if (code && language) {
@@ -98,12 +98,12 @@ const HomePage = () => {
     setCode(newCode);
   };
   return (
-    <Box bg={"#191259"} color={"white"}>
+    <Box color={"white"}>
       <Stack
         direction={{ base: "column", md: "column", lg: "row" }}
         justifyContent={"space-around"}
         alignItems={"center"}
-        bg={"#682aa1"}
+        bg={"#E3F2FD"}
         padding={"15px"}
       >
         <HStack>
