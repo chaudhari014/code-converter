@@ -30,16 +30,18 @@ const HomePage: React.FC = () => {
       };
       setLoading(true);
       try {
-        let response = await fetch(`${API}/convert`, {
+        const response = await fetch(`${API}/convert`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(obj),
         });
-        const data = await response.json();
-        setLoading(false);
-        setMessage(data?.code);
+        if (response.ok) {
+          const data = await response.json();
+          setLoading(false);
+          setMessage(data?.code);
+        }
       } catch (error) {
         setLoading(false);
         console.log(error);
@@ -54,16 +56,18 @@ const HomePage: React.FC = () => {
       };
       setLoading(true);
       try {
-        let response = await fetch(`${API}/debug`, {
+        const response = await fetch(`${API}/debug`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(obj),
         });
-       const data = await response.json();
-        setLoading(false);
-        setMessage(data?.code);
+        if (response.ok) {
+          const data = await response.json();
+          setLoading(false);
+          setMessage(data?.code);
+        }
       } catch (error) {
         setLoading(false);
         console.log(error);
@@ -78,16 +82,18 @@ const HomePage: React.FC = () => {
       };
       setLoading(true);
       try {
-        let response = await fetch(`${API}/debug`, {
+        const response = await fetch(`${API}/debug`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(obj),
         });
-        const data = await response.json();
-        setLoading(false);
-        setMessage(data?.code);
+        if (response.ok) {
+          const data = await response.json();
+          setLoading(false);
+          setMessage(data?.code);
+        }
       } catch (error) {
         setLoading(false);
         console.log(error);
