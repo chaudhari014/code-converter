@@ -1,4 +1,3 @@
-import React from "react";
 import { Circles } from "react-loader-spinner";
 
 const Loading = () => {
@@ -9,7 +8,6 @@ const Loading = () => {
       color="#4fa94d"
       ariaLabel="triangle-loading"
       wrapperStyle={{}}
-      wrapperClassName=""
       visible={true}
     />
   );
