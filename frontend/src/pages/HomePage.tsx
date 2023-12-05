@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
 
   const messageBoxRef = useRef<HTMLDivElement>(null);
   const handleConvert = async () => {
-    messageBoxRef.current.focus();
+    messageBoxRef.current?.focus();
     if (code && language) {
       let obj = {
         code: code,
@@ -37,9 +37,9 @@ const HomePage: React.FC = () => {
           },
           body: JSON.stringify(obj),
         });
-        response = await response.json();
+        const data = await response.json();
         setLoading(false);
-        setMessage(response?.code);
+        setMessage(data?.code);
       } catch (error) {
         setLoading(false);
         console.log(error);
@@ -47,7 +47,7 @@ const HomePage: React.FC = () => {
     }
   };
   const handleDebug = async () => {
-    messageBoxRef.current.focus();
+    messageBoxRef.current?.focus();
     if (code) {
       let obj = {
         code: code,
@@ -61,9 +61,9 @@ const HomePage: React.FC = () => {
           },
           body: JSON.stringify(obj),
         });
-        response = await response.json();
+       const data = await response.json();
         setLoading(false);
-        setMessage(response?.code);
+        setMessage(data?.code);
       } catch (error) {
         setLoading(false);
         console.log(error);
@@ -71,7 +71,7 @@ const HomePage: React.FC = () => {
     }
   };
   const handleQualityCheck = async () => {
-    messageBoxRef.current.focus();
+    messageBoxRef.current?.focus();
     if (code) {
       let obj = {
         code: code,
@@ -85,9 +85,9 @@ const HomePage: React.FC = () => {
           },
           body: JSON.stringify(obj),
         });
-        response = await response.json();
+        const data = await response.json();
         setLoading(false);
-        setMessage(response?.code);
+        setMessage(data?.code);
       } catch (error) {
         setLoading(false);
         console.log(error);
